@@ -119,7 +119,7 @@ export default function PeriodTrackerPage() {
       </Dialog>
       <div className="max-w-md mx-auto pb-24">
         {/* Affirmation */}
-        {displayedAffirmation && (
+        {name && displayedAffirmation && (
           <div className="bg-gradient-to-br from-pink-100 to-pink-50 border border-pink-200 rounded-2xl shadow p-4 my-6 text-center animate-fade-in">
             <span className="block text-lg font-semibold text-pink-700 leading-snug">
               {displayedAffirmation}
@@ -180,10 +180,13 @@ export default function PeriodTrackerPage() {
               <div className="bg-card rounded-xl p-4 text-sm text-muted-foreground">
                 <p className="mb-2 font-medium text-foreground">How to use:</p>
                 <ul className="space-y-1 list-disc list-inside">
-                  <li>Tap on days to mark them as period days</li>
-                  <li>Tap again to remove a period day</li>
-                  <li>Predictions will appear after logging your first period</li>
+                  <li>Tap the first day of your period each cycle</li>
+                  <li>Tap the same day again to undo it</li>
+                  <li>The more cycles you log, the better your predictions</li>
                 </ul>
+                <p className="mt-3 text-xs">
+                  🔒 All your data is stored only on your device and nowhere else!
+                </p>
               </div>
 
               {/* Stats */}
