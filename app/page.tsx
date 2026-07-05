@@ -185,7 +185,7 @@ export default function PeriodTrackerPage() {
                   <li>The more cycles you log, the better your predictions</li>
                 </ul>
                 <p className="mt-3 text-xs">
-                  🔒 All your data is stored only on your device and nowhere else!
+                  🔒 All data is stored only on your device and nowhere else!
                 </p>
               </div>
 
